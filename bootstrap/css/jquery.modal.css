@@ -1,0 +1,31 @@
+.header-new {
+    background: #FEC154;
+}
+.close-modal {
+    position: absolute;
+    top: -18.5px;
+    right: -18.5px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    text-indent: -9999px;
+    background: url("../../images/close.png");
+    background-repeat: no-repeat;
+}
+.close-modal:hover:focus {
+    border: 0;
+    top: -18.5px;
+    right: -18.5px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: url("../../images/close.png");
+    background-repeat: no-repeat;
+    background: none;
+}
+.modal-header-1 {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+

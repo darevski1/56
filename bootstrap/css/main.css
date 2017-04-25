@@ -1,0 +1,108 @@
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 92%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.arrow_box:after {
+    border-color: rgba(254, 193, 84, 0);
+    border-bottom-color: #fec154;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.arrow_box:before {
+    border-color: rgba(216, 165, 75, 0);
+    border-bottom-color: #d8a54b;
+    border-width: 13px;
+    margin-left: -13px;
+}
+/* Input style login*/
+
+/* SQUARED THREE */
+.squaredThree {
+    width: 20px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.squaredThree label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 2px;
+    border: 1px solid #6d3c58;
+    background: #FEC154;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+.squaredThree label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 7px;
+    background: transparent;
+    top: 5px;
+    left: 4px;
+    border: 3px solid #6d3c58;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.squaredThree label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+
+.squaredThree input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+input[type=checkbox] {
+    visibility: hidden;
+}
+input[type] {
+    border: 1px solid #6d3c58;
+    background: #fec154;
+    color:#6d3c58;
+    transition: box-shadow 0.3s, border 0.3s;
+    -webkit-appearance: none;
+}
+input[type]:focus{
+    background:#FFFFFF;
+    border: 1px solid #46B39C;
+}
+
+/* Login and register page placeholder color */
+input::-webkit-input-placeholder {
+    color: #6D3C58 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #6D3C58 !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #6D3C58 !important;
+}
+
+input:-ms-input-placeholder {
+    color: #6D3C58 !important;
+}
+
